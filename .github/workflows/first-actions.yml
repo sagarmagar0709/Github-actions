@@ -26,3 +26,19 @@ jobs:
       run: |
         cd src
         python -m pytest addition.py
+
+
+         What This Workflow Does (Step-by-step)
+#Matrix Build
+
+#Runs the same job on Python 3.8 and 3.9 (parallel jobs)
+
+#Steps Inside Each Job:
+
+# Checkout code → Gets repo code
+
+# Set up Python → Installs Python (3.8 or 3.9)
+
+# Install dependencies → Upgrades pip and installs pytest
+
+#Run tests → Runs addition.py test using pytest from src/ folder
